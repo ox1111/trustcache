@@ -13,7 +13,8 @@ VERSION ?= 2.0
 CPPFLAGS += -DVERSION=$(VERSION)
 
 ifeq ($(OPENSSL),1)
-	CFLAGS += -DOPENSSL
+	CFLAGS += -DOPENSSL -I/opt/homebrew/opt/openssl/include
+	LDFLAGS += -L/opt/homebrew/opt/openssl/lib
 	LIBS   += -lcrypto
 else
 	LIBS   += -lmd
