@@ -130,7 +130,7 @@ FreeBSD 14.0-CURRENT             June 16, 2022            FreeBSD 14.0-CURRENT
 
 ### trushcache 생성
 ```
- ./trustcache info my.db
+./trustcache create my.db wget
 ```
 
 
