@@ -27,6 +27,17 @@ make clean
 make OPENSSL=1 
 ```
 
+```
+hacker@blackfalconui-MacBookAir trustcache % ./trustcache 
+Usage: trustcache append [-f flags] [-u uuid | 0] infile file ...
+       trustcache create [-u uuid] [-v version] outfile file ...
+       trustcache info [-c] [-h] [-e entrynum] file
+       trustcache remove [-k] file hash ...
+
+See trustcache(1) for more information
+```
+
+
 ## help
 ```
 
