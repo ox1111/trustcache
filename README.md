@@ -13,6 +13,7 @@ machoparse/cdhash.c:58:11: fatal error: 'sha.h' file not found
 1 error generated.
 ```
 
+
 ```
 brew install openssl
 ```
@@ -42,6 +43,18 @@ Usage: trustcache append [-f flags] [-u uuid | 0] infile file ...
 See trustcache(1) for more information
 ```
 
+## 원본 make수정된 내용
+```
+
+ifeq ($(OPENSSL),1)
+        CFLAGS += -DOPENSSL -I/opt/homebrew/opt/openssl/include
+        LDFLAGS += -L/opt/homebrew/opt/openssl/lib
+        LIBS   += -lcrypto
+else
+        LIBS   += -lmd
+endif
+
+```
 
 ## help
 ```
