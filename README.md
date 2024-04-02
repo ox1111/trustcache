@@ -34,7 +34,7 @@ cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o create.o create.c
 cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o info.o info.c
 cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o remove.o remove.c
 cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o machoparse/cdhash.o machoparse/cdhash.c
-machoparse/cdhash.c:58:11: fatal error: 'sha.h' file not found
+machoparse/cdhash.c:58:11: fatal error: sha.h file not found
 #       include <sha.h>
 ```           ^~~~~~~
 
