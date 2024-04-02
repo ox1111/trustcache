@@ -8,14 +8,24 @@ openssl version
 OpenSSL 3.2.1 30 Jan 2024 (Library: OpenSSL 3.2.1 30 Jan 2024)
 ```
 
+
+### 수정된 Makefile
+```
+ifeq ($(OPENSSL),1)
+        CFLAGS += -DOPENSSL -I/opt/homebrew/opt/openssl/include
+        LDFLAGS += -L/opt/homebrew/opt/openssl/lib
+        LIBS   += -lcrypto
+else
+        LIBS   += -lmd
+endif
+```
+
 ```
 make clean
 ```
 ```
 make OPENSSL=1 
 ```
-
-
 
 ## help
 ```
