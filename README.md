@@ -125,3 +125,12 @@ HISTORY
 FreeBSD 14.0-CURRENT             June 16, 2022            FreeBSD 14.0-CURRENT
 
 ```
+
+## 사용법
+
+### trushcache 생성
+```
+ ./trustcache info my.db
+```
+
+
