@@ -1,4 +1,4 @@
-##
+## 
 ```
 openssl version
 OpenSSL 3.2.1 30 Jan 2024 (Library: OpenSSL 3.2.1 30 Jan 2024)
@@ -6,6 +6,8 @@ OpenSSL 3.2.1 30 Jan 2024 (Library: OpenSSL 3.2.1 30 Jan 2024)
 
 
 
+## help
+```
 
 TRUSTCACHE(1)               General Commands Manual              TRUSTCACHE(1)
 
@@ -71,3 +73,5 @@ HISTORY
      <me@cameronkatri.com>.
 
 FreeBSD 14.0-CURRENT             June 16, 2022            FreeBSD 14.0-CURRENT
+
+```
