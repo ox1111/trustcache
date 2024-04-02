@@ -1,4 +1,17 @@
-## 컴파일하기
+## 그냥 make하면 에러난다.
+```
+hacker@blackfalconui-MacBookAir trustcache % make
+cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o trustcache.o trustcache.c
+cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o append.o append.c
+cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o create.o create.c
+cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o info.o info.c
+cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o remove.o remove.c
+cc  -I/opt/homebrew/opt/readline/include -DVERSION=2.0  -c -o machoparse/cdhash.o machoparse/cdhash.c
+machoparse/cdhash.c:58:11: fatal error: 'sha.h' file not found
+#       include <sha.h>
+                ^~~~~~~
+1 error generated.
+```
 
 ```
 brew install openssl
@@ -13,6 +26,8 @@ OpenSSL 3.2.1 30 Jan 2024 (Library: OpenSSL 3.2.1 30 Jan 2024)
 make clean
 ```
 
+
+## 아래 옵션으로 make한다.
 ```
 make OPENSSL=1 
 ```
