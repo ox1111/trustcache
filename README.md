@@ -134,3 +134,10 @@ FreeBSD 14.0-CURRENT             June 16, 2022            FreeBSD 14.0-CURRENT
 ```
 
 
+
+
+
+## 참고링크
+
+https://github.com/pwn20wndstuff/Undecimus/issues/300
+
