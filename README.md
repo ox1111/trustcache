@@ -138,8 +138,15 @@ FreeBSD 14.0-CURRENT             June 16, 2022            FreeBSD 14.0-CURRENT
 ./trustcache info my.db 
 ```
 
+### trushcache append
+```
+./trustcache append my.db 55063cad5907bc2a3f39d619cf4a4a0865e19e89
+```
 
-
+### trushcache remote
+```
+./trustcache remote my.db 55063cad5907bc2a3f39d619cf4a4a0865e19e89
+```
 
 ## 참고링크
 
